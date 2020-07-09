@@ -1,0 +1,9 @@
+.tile {
+    cursor: pointer;
+    border-radius: 25px;
+    height: 100px;
+}
+
+.tile:hover {
+    border-style: solid;
+}

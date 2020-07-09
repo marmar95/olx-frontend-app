@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Category } from '../app/models/Category'
+import 'automapper-ts';
 
 @Component({
   selector: 'app-root',
