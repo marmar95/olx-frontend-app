@@ -1,9 +1,9 @@
 .tile {
+    font-weight: bold;
     cursor: pointer;
     border-radius: 25px;
     height: 100px;
-}
-
-.tile:hover {
-    border-style: solid;
+    &:hover {
+        border-style: solid;
+    }
 }
