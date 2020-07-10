@@ -1,0 +1,6 @@
+<h2 class="center">Subcategories</h2>
+<div class="p-grid p-dir-rev">
+    <div class="p-col center tile" *ngFor="let category of model.List | async" >
+        {{ category.name }}
+    </div>
+</div>

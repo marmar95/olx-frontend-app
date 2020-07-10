@@ -20,3 +20,22 @@ body {
 .mr-2 {
     margin-right: 2px;
 }
+
+.main {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,35,100,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+.tile {
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 100px;
+    &:hover {
+        border-style: solid;
+    }
+}
+
+.card-container form {
+    margin: 5px;
+}

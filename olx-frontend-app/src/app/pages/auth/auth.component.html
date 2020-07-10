@@ -1,15 +1,7 @@
-<!-- <p-tabView (onChange)="changeTab($event)">
-    <p-tabPanel [index]="0" header="register" leftIcon="pi pi-calendar">
-            <app-register *ngIf="selectedTabIndex == 0"></app-register>
-    </p-tabPanel>
-    <p-tabPanel [index]="1" header="login" leftIcon="pi pi-calendar">
-            <app-login *ngIf="selectedTabIndex == 1"></app-login>
-    </p-tabPanel>
-</p-tabView> -->
 <div>
      <ul class="nav nav-pills">
-        <li><a (click)="changeTab(0)">Register</a></li>
-        <li><a (click)="changeTab(1)" >Login</a></li>
+        <li><a class="tile mr-2" (click)="changeTab(0)">Register</a></li>
+        <li><a class="tile" (click)="changeTab(1)" >Login</a></li>
     </ul>
     <app-register *ngIf="selectedTabIndex == 0"></app-register>
     <app-login *ngIf="selectedTabIndex == 1"></app-login>

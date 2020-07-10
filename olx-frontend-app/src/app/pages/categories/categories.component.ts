@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Category } from 'src/app/models/Category';
 import { CategoryService } from 'src/app/services/category/category.service';
+import { Categories } from 'src/app/models/Categories';
 
 @Component({
   selector: 'app-categories',
@@ -10,12 +11,17 @@ import { CategoryService } from 'src/app/services/category/category.service';
 })
 export class CategoriesComponent implements OnInit {
 
-  categories: Observable<Category[]>;
+  model: Categories = new Categories();
   
   constructor(public service: CategoryService) { }
 
   ngOnInit() {
-    this.categories = this.service.getAllCategories();
+    this.model.AllCategories = this.service.getAllCategories();
+  }
+
+  setSelectedCategory(id: Number) {
+    
+    this.model.SelectedCategoryId = id;
   }
 
 }

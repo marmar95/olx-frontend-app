@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { FormsModule } from '@angular/forms';
 import {TabViewModule} from 'primeng/tabview';
+import { SubcategoriesComponent } from './pages/categories/subcategories/subcategories.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {TabViewModule} from 'primeng/tabview';
     HeaderComponent,
     AuthComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SubcategoriesComponent
   ],
   imports: [
     BrowserModule,
