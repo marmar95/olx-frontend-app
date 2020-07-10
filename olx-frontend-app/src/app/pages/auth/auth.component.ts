@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent implements OnInit {
-
+  public selectedTabIndex : Number = 0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeTab(index) {
+    this.selectedTabIndex = index;
   }
 
 }
