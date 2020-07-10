@@ -3,5 +3,5 @@ import { Observable } from 'rxjs';
 
 export class Categories {
     SelectedCategoryId : Number = null;
-    AllCategories: Observable<Category[]>;
+    List: Observable<Category[]>;
 }

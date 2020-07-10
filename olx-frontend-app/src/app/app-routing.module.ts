@@ -4,6 +4,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { LoginComponent } from './pages/auth/login/login.component';
+import { AdsComponent } from './pages/ads/ads.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent},
   { path: 'mainCategories', component: CategoriesComponent },
+  { path: 'ad/:categoryId', component: AdsComponent }
 ];
 
 @NgModule({

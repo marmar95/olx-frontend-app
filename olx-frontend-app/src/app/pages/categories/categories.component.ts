@@ -16,11 +16,11 @@ export class CategoriesComponent implements OnInit {
   constructor(public service: CategoryService) { }
 
   ngOnInit() {
-    this.model.AllCategories = this.service.getAllCategories();
+    this.model.List = this.service.getAllCategories();
   }
 
   setSelectedCategory(id: Number) {
-    
+
     this.model.SelectedCategoryId = id;
   }
 

@@ -1,7 +1,7 @@
 <div>
     <h1 class="center">Main Categories</h1>
     <div class="p-grid p-dir-rev">
-        <div class="p-col center tile" *ngFor="let category of model.AllCategories | async" (click)="setSelectedCategory(category.id)" >
+        <div class="p-col center tile" *ngFor="let category of model.List | async" (click)="setSelectedCategory(category.id)" >
             {{ category.name }}
         </div>
     </div>

@@ -16,6 +16,7 @@ export class CategoryService {
   }
 
   getSubcategories(id: number) {
+    
     return this.httpClient.get<Category[]>(`${this.url}${id}`);
   }
 }

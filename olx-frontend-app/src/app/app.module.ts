@@ -11,6 +11,8 @@ import { RegisterComponent } from './pages/auth/register/register.component';
 import { FormsModule } from '@angular/forms';
 import {TabViewModule} from 'primeng/tabview';
 import { SubcategoriesComponent } from './pages/categories/subcategories/subcategories.component';
+import { AdsComponent } from './pages/ads/ads.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { SubcategoriesComponent } from './pages/categories/subcategories/subcate
     AuthComponent,
     LoginComponent,
     RegisterComponent,
-    SubcategoriesComponent
+    SubcategoriesComponent,
+    AdsComponent
   ],
   imports: [
     BrowserModule,

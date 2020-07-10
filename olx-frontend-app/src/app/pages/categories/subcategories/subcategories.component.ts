@@ -18,7 +18,7 @@ export class SubcategoriesComponent implements OnInit, OnChanges {
   model: Subcategories = new Subcategories();
 
   ngOnInit(): void {
-
+    
     this.reloadData();
   }
 
@@ -26,7 +26,7 @@ export class SubcategoriesComponent implements OnInit, OnChanges {
     this.reloadData();
   }
 
-  reloadData() {
+  private reloadData() {
     this.model.List = this.service.getSubcategories(this.mainCategoryId);
   }
 
