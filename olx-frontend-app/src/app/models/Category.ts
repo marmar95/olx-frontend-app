@@ -1,5 +1,5 @@
 export interface Category {
-    Id: Number;
-    Name: string;
-    IsMostDetailed: boolean
+    id: Number;
+    name: string;
+    isMostDetailed: boolean
 }

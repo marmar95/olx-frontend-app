@@ -1,6 +1,6 @@
 export interface Ad {
-    Id: Number;
-    Name: string;
-    Price: Number;
-    IsPriceNegotiable: boolean;
+    id: Number;
+    name: string;
+    price: Number;
+    isPriceNegotiable: boolean;
 }

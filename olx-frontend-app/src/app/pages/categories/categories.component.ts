@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Category } from 'src/app/models/Category';
 import { CategoryService } from 'src/app/services/category/category.service';
 import { Categories } from 'src/app/models/Categories';
 
@@ -15,13 +13,13 @@ export class CategoriesComponent implements OnInit {
   
   constructor(public service: CategoryService) { }
 
-  ngOnInit() {
-    this.model.List = this.service.getAllCategories();
+  ngOnInit(): void {
+    this.model.list = this.service.getAllCategories();
   }
 
-  setSelectedCategory(id: Number) {
+  setSelectedCategory(id: Number): void {
 
-    this.model.SelectedCategoryId = id;
+    this.model.selectedCategoryId = id;
   }
 
 }

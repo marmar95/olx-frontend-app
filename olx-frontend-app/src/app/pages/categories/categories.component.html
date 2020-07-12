@@ -1,11 +1,11 @@
 <div>
     <h1 class="center">Main Categories</h1>
     <div class="p-grid p-dir-rev">
-        <div class="p-col center tile" *ngFor="let category of model.List | async" (click)="setSelectedCategory(category.id)" >
+        <div class="p-col center tile" *ngFor="let category of model.list | async" (click)="setSelectedCategory(category.id)" >
             {{ category.name }}
         </div>
     </div>
     <div>
-        <app-subcategories *ngIf="model.SelectedCategoryId != null" [mainCategoryId]="model.SelectedCategoryId"></app-subcategories>
+        <app-subcategories *ngIf="model.selectedCategoryId != null" [mainCategoryId]="model.selectedCategoryId"></app-subcategories>
     </div>
 </div>

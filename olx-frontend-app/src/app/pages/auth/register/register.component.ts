@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../services/auth/auth.service';
+import { RegisterForm } from 'src/app/models/RegisterForm';
 
 @Component({
   selector: 'app-register',
@@ -7,10 +8,11 @@ import { AuthService } from '../../../services/auth/auth.service';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  form: any = {};
-  isSuccessful = false;
-  isSignUpFailed = false;
-  errorMessage = '';
+  
+  public form: RegisterForm = new RegisterForm();
+  public isSuccessful : boolean = false;
+  public isSignUpFailed : boolean = false;
+  public errorMessage : string = '';
 
   constructor(private authService: AuthService) { }
 

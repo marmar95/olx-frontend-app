@@ -1,7 +1,5 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { CategoryService } from 'src/app/services/category/category.service';
-import { Observable } from 'rxjs';
-import { Category } from 'src/app/models/Category';
 import { Subcategories } from 'src/app/models/Subcategories';
 
 @Component({
@@ -22,12 +20,12 @@ export class SubcategoriesComponent implements OnInit, OnChanges {
     this.reloadData();
   }
 
-  ngOnChanges() {
+  ngOnChanges(): void {
     this.reloadData();
   }
 
-  private reloadData() {
-    this.model.List = this.service.getSubcategories(this.mainCategoryId);
+  private reloadData(): void {
+    this.model.list = this.service.getSubcategories(this.mainCategoryId);
   }
 
 }
