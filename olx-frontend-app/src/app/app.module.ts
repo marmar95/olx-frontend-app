@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import {TabViewModule} from 'primeng/tabview';
 import { SubcategoriesComponent } from './pages/categories/subcategories/subcategories.component';
 import { AdsComponent } from './pages/ads/ads.component';
+import { EditAdComponent } from './pages/ads/edit-ad/edit-ad.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AdsComponent } from './pages/ads/ads.component';
     LoginComponent,
     RegisterComponent,
     SubcategoriesComponent,
-    AdsComponent
+    AdsComponent,
+    EditAdComponent
   ],
   imports: [
     BrowserModule,

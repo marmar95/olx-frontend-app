@@ -1,8 +1,8 @@
 <div>
      <ul class="nav nav-pills">
-        <li><a class="tile mr-2" (click)="changeTab(0)">Register</a></li>
-        <li><a class="tile" (click)="changeTab(1)" >Login</a></li>
+        <li><a class="tile" (click)="changeTab(0)" >Login</a></li>
+        <li><a class="tile mr-2" (click)="changeTab(1)">Register</a></li>
     </ul>
-    <app-register *ngIf="selectedTabIndex == 0"></app-register>
-    <app-login *ngIf="selectedTabIndex == 1"></app-login>
+    <app-login *ngIf="selectedTabIndex == 0"></app-login>
+    <app-register *ngIf="selectedTabIndex == 1"></app-register>
 </div>
